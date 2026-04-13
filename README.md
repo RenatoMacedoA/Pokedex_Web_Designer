@@ -4,6 +4,12 @@ Uma Pokédex interativa desenvolvida com HTML, CSS e JavaScript, consumindo a Po
 
 A simple interactive Pokédex built with HTML, CSS, and JavaScript, using the PokéAPI to dynamically display Pokémon data in a responsive layout.
 
+---
+
+## 📸 Preview
+<p align="center">
+  <img src="preview.png" alt="Preview do Projeto" width="600px">
+</p>
 
 ---
 
