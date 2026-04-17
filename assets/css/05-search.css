@@ -1,0 +1,110 @@
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 540px;
+  height: 32px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 0 8px;
+  margin: 10px auto;
+  border: 1px solid transparent;
+
+  /* animação */
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao focar */
+.search-box:focus-within {
+  background: #ffffff;
+  border: 1px solid #be1d2d;
+  box-shadow: 0 0 8px rgba(190, 29, 45, 0.4);
+  transform: scale(1.02);
+}
+
+/* INPUT */
+.search-box input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  font-size: 13px;
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder suave */
+.search-box input::placeholder {
+  color: #aaa;
+  transition: 0.3s;
+}
+
+/* Quando focar, o placeholder some suavemente */
+.search-box input:focus::placeholder {
+  opacity: 0.3;
+}
+
+/* BOTÃO */
+.search-box button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: #888888;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover no botão */
+.search-box button:hover {
+  background: #8f1622;
+  transform: scale(1.1);
+}
+
+/* Clique (feedback) */
+.search-box button:active {
+  transform: scale(0.95);
+}
+
+
+.error {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: rgba(255, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Centralização horizontal no fluxo normal */
+    margin: 2rem auto; 
+    width: 90%;
+    max-width: 400px;
+    
+    /* Garante que a div seja tratada como um bloco centralizado */
+    display: block; 
+}
+
+.error p {
+    color: #ff4d4d;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.error span {
+    color: #fff;
+    background: #ff4d4d;
+    padding: 2px 8px;
+    border-radius: 6px;
+    display: inline-block;
+}

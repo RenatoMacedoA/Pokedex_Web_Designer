@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="assets/image/pokeball.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="assets/css/01-global.css" />
+    <link rel="stylesheet" href="assets/css/02-pokedex.css" />
+    <link rel="stylesheet" href="assets/css/03-pokemon-card.css" />
+    <link rel="stylesheet" href="assets/css/04-pokemon-types.css" />
+    <link rel="stylesheet" href="assets/css/05-search.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="assets/css/06-pagination.css" />
+  </head>
+
+  <body>
+
+    <!-- Background -->
+    <div class="background"></div>
+    <div class="ash"></div>
+    <div class="pikachu"></div>
+    <div class="bg-video">
+      <video id="video" autoplay muted loop playsinline>
+        <source src="./assets/vidio/download.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+
+    <section class="content">
+      <section class="logo"></section>
+
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar..." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+
+      <ol id="pokemonList" class="pokemons">
+        <!-- ..... Pokemons here ..... -->
+      </ol>
+
+      <!-- Modal (fica escondido inicialmente) -->
+      <div id="pokemonPopup" class="modal hidden">
+          
+
+        <!-- Caixa de conteúdo do modal -->
+        <div class="modal-content">
+                   <!-- Botão de fechar (X) -->
+          <span class="close">&times;</span>
+
+          <!-- Aqui vamos inserir os dados do Pokémon via JS -->
+          <div id="modalBody">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- ..... Paginação..... -->
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Load More</button>
+      </div>
+    </section>
+
+    <!-- Nosso JS -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/buscaApi.js"></script>
+    <script src="assets/js/modal.js"></script>
+  </body>
+</html>

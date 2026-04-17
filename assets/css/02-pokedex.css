@@ -1,0 +1,37 @@
+/* --- Grid de Pokémons --- */
+.pokemons {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Grid responsivo inteligente */
+  gap: 0.1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.logo {
+  background: url(/assets/image/logo.png) no-repeat center;
+  background-size: contain;
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 380px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

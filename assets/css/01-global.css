@@ -1,0 +1,101 @@
+/* Configurações Gerais de Reset */
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: #be1d2d;
+  min-height: 100vh;
+}
+
+.bg-video {
+  position: fixed;
+  z-index: -3;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.bg-video #video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.bg-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  backdrop-filter: blur(1.5px);
+  background: rgba(44, 15, 19, 0.3);
+}
+
+/* Camada de Fundo (Wallpaper) */
+.background {
+  position: fixed;
+  inset: 0;
+  background-color: #be1d2d;
+  background-size: cover;
+  opacity: 0.8; /* Opacidade reduzida para não brigar com o conteúdo */
+  z-index: -3;
+}
+
+/* Estilização dos Personagens Decorativos */
+.pikachu,
+.ash {
+  position: fixed;
+  pointer-events: none; /* Garante que os personagens não atrapalhem cliques */
+  z-index: -2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pikachu {
+  bottom: 0;
+  left: -20px;
+  width: 400px;
+  height: 300px;
+  background-image: url("../image/pikachu.png");
+  background-position: bottom left;
+}
+
+.ash {
+  bottom: 10%;
+  right: 0;
+  width: 250px;
+  height: 450px;
+  background-image: url("../image/Ash.png");
+  background-position: bottom right;
+}
+
+/* Container de Conteúdo (Painel Branco) */
+.content {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 1.5rem auto 2rem;
+  min-height: auto; /* 👈 aqui */
+  max-width: 900px; /* opcional */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem; /* opcional */
+}
+
+
+/* Ajustes para telas maiores (Desktop) */
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    border-radius: 1.5rem;
+    min-height: auto;
+  }
+}

@@ -1,0 +1,96 @@
+/* CORES DOS CARDS */
+.normal {
+  background-color: #a6a877;
+}
+.grass {
+  background-color: #49d0b0;
+}
+.bug {
+  background-color: #8ad049;
+}
+.fairy {
+  background-color: #db749f;
+}
+.fire {
+  background-color: #f05267;
+}
+.water {
+  background-color: #44bce0;
+}
+.electric {
+  background-color: rgb(223, 235, 67);
+}
+.poison {
+  background-color: rgb(130, 175, 189);
+}
+.ground {
+  background-color: rgb(136, 130, 94);
+}
+.fighting {
+  background-color: rgb(218, 153, 70);
+}
+.psychic {
+  background-color: rgb(112, 62, 62);
+}
+.rock {
+  background-color: rgb(161, 161, 161);
+}
+.ghost {
+  background-color: rgb(71, 134, 120);
+}
+.ice {
+  background-color: rgb(187, 243, 231);
+}
+.dragon {
+  background-color: rgb(236, 133, 48);
+}
+
+/* TIPOS DENTRO DO CARD */
+.pokemon .detail .types {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pokemon .detail .types .type {
+  color: #fff;
+  padding: 0.25rem 0.8rem;
+  margin: 0.8rem 0;
+  font-size: 0.725rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+  text-transform: capitalize;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* CORES DOS TIPOS */
+.pokemon .detail .types .grass {
+  background-color: #78da6b;
+}
+.pokemon .detail .types .poison {
+  background-color: #c38aca;
+}
+.pokemon .detail .types .bug {
+  background-color: #6cc964;
+}
+.pokemon .detail .types .normal {
+  background-color: #9e9e9e;
+}
+.pokemon .detail .types .fire {
+  background-color: #f8863a;
+}
+.pokemon .detail .types .fairy {
+  background-color: #f89eb9;
+}
+.pokemon .detail .types .water {
+  background-color: #3675d4;
+}
+.pokemon .detail .types .electric {
+  background-color: #d4d136;
+}
+
+.pokemon .detail .types .flying {
+  background-color: #ffffff;
+  color: #777676;
+}
