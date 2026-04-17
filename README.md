@@ -9,6 +9,7 @@ A simple interactive Pokédex built with HTML, CSS, and JavaScript, using the Po
 ## 📸 Preview
 <p align="center">
   <img src="preview1.png" alt="Preview do Projeto" width="600px">
+   <img src="preview2.png" alt="Preview do Projeto" width="600px">
 </p>
 
 ---
